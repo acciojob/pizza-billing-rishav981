@@ -37,7 +37,7 @@ public class Pizza {
     }
     public void addExtraCheese(){
         if(!this.Cheese){
-            price+=70;
+            price+=80;
         }
         this.Cheese=true;
         // your code goes here
