@@ -6,7 +6,7 @@ public class Pizza {
     private Boolean isVeg;
     private String bill;
 
-    private Boolean Cheese;
+    private Boolean cheese;
 
     private Boolean Topping;
 
@@ -16,7 +16,7 @@ public class Pizza {
     public Pizza(Boolean isVeg){
         this.isVeg = isVeg;
         this.Bag = false;
-        this.Cheese = false;
+        this.cheese = false;
         this.Topping = false;
         if(isVeg) {
             this.setPrice(300);
@@ -36,11 +36,16 @@ public class Pizza {
         this.price=p;
     }
     public void addExtraCheese(){
+<<<<<<< HEAD
         if(!Cheese){
             this.Cheese=true;
             price+=70;
         }
         this.Cheese=true;
+=======
+        // your code goes here
+        this.cheese=true;
+>>>>>>> c02371a4aea854faf0df4ed7c61a4575a1ab1d74
     }
 
     public void addExtraToppings(){
@@ -78,7 +83,7 @@ public class Pizza {
         else {
             bill = "Base Price Of The Pizza: 400" + "\n";
         }
-        if(Cheese){
+        if(cheese){
             bill+= "Extra Cheese Added: 80"+"\n";
         }
         if(Topping){
